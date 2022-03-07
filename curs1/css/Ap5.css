@@ -1,0 +1,20 @@
+input[name]:invalid {
+    border: 2px solid red;
+}
+input[name]:invalid:required {
+    border: 2px solid blue;
+}
+input[name]:valid {
+    background-color: green;
+    border: 2px solid green;
+}
+input[type="email"]:focus{
+text-transform: uppercase;
+}
+p:empty{
+    display: none;
+}
+/*am adaugat inainte si dupa h2*/
+h2::before, h2::after{
+    content: "*****";
+}

@@ -1,0 +1,16 @@
+.classcomun {
+    margin: 25px;
+    padding: 15px;
+    border-width: 3px;
+    border-style: double;
+}
+
+#parred {
+    color: red;
+    border-color: blue;
+}
+ 
+.classblue {
+    color: blue;
+    border-color: rgb(45, 99, 23);
+}

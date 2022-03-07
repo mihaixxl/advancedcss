@@ -1,0 +1,40 @@
+/* Selector universal pentru toate elementele */
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+/* html si body primesc stilul asta */
+html,body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Toate divurie primesc stilul asta*/
+div {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    border: double 3px red;
+    padding: 10px 25px;
+}
+/* Toate paragrafele primesc stilul asta*/
+p{
+    color: brown;
+    font-size: 30px;
+}
+/* Toate sectiunile primesc stilul asta*/
+section {
+    border: solid 5px blue;
+}
+div > p {
+    font-style: italic;
+}
+/* Divul si un paragraf dupa div primeste stilul asta */
+div + p {
+    font-weight: bold;
+    font-style: oblique;
+}
+/* Toate elementele dupa div primesc stilu asta */
+ div ~ p {
+    font-weight: bold;
+    font-style: oblique;
+}

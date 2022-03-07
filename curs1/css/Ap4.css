@@ -1,0 +1,66 @@
+ body{
+     background-color: aqua;
+ }
+ p{
+     color: deeppink;
+ }
+ a[title] {
+    color: green;
+    font-size: 15px;
+}
+ a[href="https://www.link-academy.com"] {
+     color: #1f6053;
+     font-size: 25px;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+ a[href="https://translate.google.com/?sl=ro&tl=en&op=translate"] {
+     color: red;
+     text-decoration: none;
+     border: dotted yellow;
+ }
+ a[href="https://translate.google.com/?sl=fr&tl=ro&op=translate"] {
+     color: rgb(255, 255, 6);
+     text-decoration: none;
+     border: dotted blue;
+ }
+ a[href="https://translate.google.com/?sl=it&tl=ro&op=translate"] {
+     color: blue;
+     text-decoration: none;
+     border:dotted red;
+ }
+a[href ^="https"]{
+    text-transform: uppercase;
+}
+a[href $=".com"]{
+    text-decoration: none;
+    font-style: italic;
+}
+a[href $=".org"]{
+    text-decoration: none;
+    font-style: italic;
+}
+  a[data-info~="external"]{
+    color: red;
+}
+a[data-info~="intern"]{
+    border: 1px solid black;
+}
+ p:empty{
+    display: none;
+}
+ ul#translate{
+     margin: 5px 40px;
+     padding: 15px;
+     font-size: 15px;
+     font-family: Arial, Helvetica sans-serif;
+ }
+ ul#meniu{
+    list-style: none;
+}
+ ul#meniu li{
+     display: inline-block;
+     padding: 150px 15px;
+     font-size: 150%;
+     margin-left: 125px;
+     margin-top:10px ;
+ }
