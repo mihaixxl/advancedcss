@@ -640,15 +640,8 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
- .bx.bxl-dribbble{
-font-size: x-large;
- }
- .bx.bx-file{
+
+ .bx{
    font-size: x-large;
  }
- .bx.bx-tachometer{
-   font-size: x-large;
- }
- .bx.bx-world{
-   font-size: x-large;
- }
+ 
