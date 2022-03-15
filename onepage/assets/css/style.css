@@ -1,9 +1,16 @@
 :root{
-  --mycolor: #220f3a;
+  --mycolor: #6018be;
+  --sectioncolor:#b3aaaa ;
+  --headercolor:#ece4e4;
+
 }
-:root{
-  --sectioncolor: #b3aaaa;
+[data-theme="dark"] {
+  --mycolor: black;
+  --sectioncolor:#585454;
+  --headercolor:#585454;
+  
 }
+
 
 /*--------------------------------------------------------------
 # General
@@ -114,20 +121,20 @@ h1, h2, h3, h4, h5, h6 {
 # Top Bar
 --------------------------------------------------------------*/
 #topbar {
-  background: var(--mycolor);
+  background: var(--sectioncolor);
   height: 40px;
   font-size: 14px;
   transition: all 0.5s;
-  color: #fff;
+  color: var(--mycolor);
   padding: 0;
 }
 #topbar .contact-info i {
   font-style: normal;
-  color: #fff;
+  color: var(--mycolor);
 }
 #topbar .contact-info i a, #topbar .contact-info i span {
   padding-left: 5px;
-  color: #fff;
+  color: var(--mycolor);
 }
 #topbar .contact-info i a {
   line-height: 0;
@@ -139,7 +146,7 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: underline;
 }
 #topbar .social-links a {
-  color: rgba(255, 255, 255, 0.7);
+  color:var(--mycolor);
   line-height: 0;
   transition: 0.3s;
   margin-left: 20px;
@@ -152,7 +159,7 @@ h1, h2, h3, h4, h5, h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-  background: #fff;
+  background:var(--headercolor);
   transition: all 0.5s;
   z-index: 997;
   height: 86px;
@@ -571,6 +578,77 @@ section {
  .text1{
    color: #fff;
  }
-  
 
- 
+
+
+/*slider switch css */
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+
+}
+.theme-switch-wrapper em {
+    margin-right: 15px;
+    font-size: 1rem;
+  }
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #66bb6a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+ .bx.bxl-dribbble{
+font-size: x-large;
+ }
+ .bx.bx-file{
+   font-size: x-large;
+ }
+ .bx.bx-tachometer{
+   font-size: x-large;
+ }
+ .bx.bx-world{
+   font-size: x-large;
+ }
