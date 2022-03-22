@@ -174,22 +174,6 @@
     selector: '.glightbox'
   });
 
-  /**
-   * Skills animation
-   */
-  let skilsContent = select('.skills-content');
-  if (skilsContent) {
-    new Waypoint({
-      element: skilsContent,
-      offset: '80%',
-      handler: function(direction) {
-        let progress = select('.progress .progress-bar', true);
-        progress.forEach((el) => {
-          el.style.width = el.getAttribute('aria-valuenow') + '%'
-        });
-      }
-    })
-  }
 
   /**
    * Testimonials slider
@@ -278,8 +262,8 @@
 })()
 
 
-// Aplicatia 2
-const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+// Enable Dark Mode!
+const toggleSwitch = document.querySelector('#myid .theme-switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme');
 
 if (currentTheme) {
