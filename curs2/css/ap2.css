@@ -3,6 +3,7 @@
     width: 100px;
     height: 60px;
     display: inline-block;
+    
 }
 #heart:before, #heart:after {
     position: absolute;
@@ -17,18 +18,18 @@
     transform-origin: 0 100%;
     animation: pulsecore 1s infinite;
 }
-#wrapper {
+    #wrapper { 
     position: absolute;
     margin-left: 50px;
     margin-top: 50px;
     animation: pulse 1s infinite;
 }
-.text {
+ .text { 
 
     margin: 250px;
-    font-size: 50px;
+    font-size: 10px;
     font-weight: bold;
-    color: red;
+    color: black;
     animation:pulsecore 1s infinite;
 }
 #heart:after {
@@ -36,8 +37,8 @@
     transform-origin: 100% 100%;
     left: 0%;
 
-}@keyframes pulsecore  {
-    10% {background:  blue;}
+/* }@keyframes pulsecore  { */
+    /* 10% {background:  blue;} */
 }@keyframes pulse{
-    10%{transform: scale(1.1);}
+    /* 10%{transform: scale(1.1);} */
 } 

@@ -1,0 +1,18 @@
+p{
+    color:goldenrod;
+}
+@media(min-width: 576px) {
+    p{
+        color: red;
+    }
+}
+@media(min-width: 768px) {
+    p{
+        color: green;
+    }
+}
+@media(min-width: 982px) {
+    p{
+        color: blue;
+    }
+}
