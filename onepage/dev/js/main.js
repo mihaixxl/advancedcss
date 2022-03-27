@@ -3,7 +3,7 @@
     "use strict";
   
     /**
-     * Easy selector helper function
+     * Easy selector helper function 333
      */
     const select = (el, all = false) => {
       el = el.trim()
